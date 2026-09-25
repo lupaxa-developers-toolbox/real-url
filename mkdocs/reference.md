@@ -89,7 +89,7 @@ The CLI is installed as `real-url`.
 
 `--full` combined with `--status` uses the `--status` layout.
 
-### Exit codes
+### Exit Codes
 
 | Code | Meaning                                         |
 | ---- | ----------------------------------------------- |

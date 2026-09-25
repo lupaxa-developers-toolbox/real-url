@@ -1,6 +1,6 @@
 # Examples
 
-## Unwrap a short link
+## Unwrap a Short Link
 
 ```python
 from lupaxa.real_url import resolve
@@ -13,7 +13,7 @@ print(landing)
 real-url https://example.com
 ```
 
-## Inspect the whole chain
+## Inspect the Whole Chain
 
 ```python
 from lupaxa.real_url import resolve
@@ -26,7 +26,7 @@ for url in resolve("https://example.com", full=True):
 real-url --full https://example.com
 ```
 
-## Include status codes
+## Include Status Codes
 
 ```python
 from lupaxa.real_url import resolve
@@ -39,7 +39,7 @@ for hop in resolve("https://example.com", status=True):
 real-url --status https://example.com
 ```
 
-## Detect a loop
+## Detect a Loop
 
 ```python
 from lupaxa.real_url import RedirectLoopError, resolve
@@ -50,7 +50,7 @@ except RedirectLoopError as exc:
     print("Loop:", [hop.url for hop in exc.hops])
 ```
 
-## Cap the hop count
+## Cap the Hop Count
 
 ```python
 from lupaxa.real_url import TooManyRedirectsError, resolve

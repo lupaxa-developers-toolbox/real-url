@@ -1,4 +1,4 @@
-# real-url
+# Real URL
 
 Follow HTTP redirects and report the URL that actually serves the page.
 
@@ -22,7 +22,7 @@ real-url --status https://example.com
 real-url --version
 ```
 
-## What you get
+## What You Get
 
 -   The final URL by default, from the library or the CLI
 -   The full hop list when you pass `full=True` or `--full`
@@ -34,10 +34,3 @@ real-url --version
 Only `http` and `https` are followed. A URL without a scheme is tried as
 `https://` first, then `http://` if HTTPS cannot be fetched or returns
 404. Relative `Location` headers are joined onto the current hop.
-
-## Next steps
-
-- [Getting started](getting-started.md) — install and first lookups
-- [Usage](usage.md) — library options and CLI flags
-- [Reference](reference.md) — public API and exit codes
-- [Examples](examples.md) — copy-paste recipes

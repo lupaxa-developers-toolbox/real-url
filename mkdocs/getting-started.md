@@ -1,4 +1,4 @@
-# Getting started
+# Getting Started
 
 ## Requirements
 
@@ -15,7 +15,7 @@ The PyPI name is `lupaxa-real-url`. The import path is `lupaxa.real_url`.
 The console script is `real-url`. `lupaxa` is a namespace package — there
 is no `lupaxa/__init__.py`.
 
-### From source (development)
+### From Source (Development)
 
 ```bash
 make init
@@ -29,7 +29,7 @@ After makefile-skills are installed:
 make mkdocs-serve
 ```
 
-## First lookup
+## First Lookup
 
 Pass any HTTP(S) URL. The return value is the URL that finally served
 the response:
@@ -56,7 +56,7 @@ real-url https://github.com
 The CLI prints the final URL and exits `0`. Exit `2` means the URL was
 invalid. Exit `1` means a loop, hop limit, or network error.
 
-## See the chain
+## See the Chain
 
 Ask for every hop, or hops with status codes:
 
@@ -75,7 +75,7 @@ real-url --status https://example.com
 `--full` prints one URL per line. `--status` prints `STATUS URL` for
 each hop. Passing both flags uses the `--status` layout.
 
-## Makefile helpers
+## Makefile Helpers
 
 ```bash
 make init                 # clone makefile-skills into .makefiles/

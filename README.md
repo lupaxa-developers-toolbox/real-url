@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<h1 align="center">real-url</h1>
+<h1 align="center">Real URL</h1>
 
 Follow HTTP redirects and report the URL that actually serves the page.
 The hop list is kept from the URL you started with through to the last
@@ -42,7 +42,8 @@ every hop. `--status` prints each hop with its HTTP status code.
 
 ## Documentation
 
-Site pages live in `mkdocs/`.
+Site pages live in `mkdocs/` and publish to
+<https://real-url.thelupaxaproject.org/>.
 
 ```bash
 make init

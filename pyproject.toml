@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "lupaxa-real-url"
 dynamic = ["version"]
 description = "Follow HTTP redirects and report the URL that actually serves the page."
-readme = "README-PYPI.md"
+readme = "README.md"
 license = { file = "LICENCE" }
 requires-python = ">=3.10"
 
@@ -38,8 +38,8 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/lupaxa-developers-toolbox/real-url"
-Documentation = "https://github.com/lupaxa-developers-toolbox/real-url"
+Homepage = "https://real-url.thelupaxaproject.org/"
+Documentation = "https://real-url.thelupaxaproject.org/"
 Repository = "https://github.com/lupaxa-developers-toolbox/real-url"
 Issues = "https://github.com/lupaxa-developers-toolbox/real-url/issues"
 
@@ -69,7 +69,6 @@ path = "src/lupaxa/real_url/version.py"
 include = [
   "src/**",
   "README.md",
-  "README-PYPI.md",
   "LICENCE",
 ]
 

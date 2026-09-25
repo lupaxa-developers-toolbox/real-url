@@ -1,6 +1,6 @@
 # Usage
 
-## How following works
+## How Following Works
 
 `resolve` issues a GET for the starting URL with automatic redirects
 turned off. Each `3xx` response with a `Location` header becomes the
@@ -29,7 +29,7 @@ from lupaxa.real_url import resolve
 resolve("https://example.com")
 ```
 
-### Every hop
+### Every Hop
 
 ```python
 resolve("https://example.com", full=True)
@@ -37,7 +37,7 @@ resolve("https://example.com", full=True)
 
 Returns a list of URL strings, start first and final last.
 
-### Hops with status codes
+### Hops With Status Codes
 
 ```python
 from lupaxa.real_url import Hop, resolve
@@ -50,7 +50,7 @@ for hop in hops:
 `status=True` always returns the full chain as `Hop` values, including
 when `full=True` is also set.
 
-### Trace explicitly
+### Trace Explicitly
 
 `trace` always returns the hop list. `resolve` is the convenience
 wrapper that matches the CLI flags:
@@ -62,13 +62,13 @@ hops = trace("https://example.com")
 hops[-1].url
 ```
 
-### Timeouts and hop limits
+### Timeouts and Hop Limits
 
 ```python
 resolve("https://example.com", timeout=5.0, max_redirects=10)
 ```
 
-### Handle failures
+### Handle Failures
 
 ```python
 from lupaxa.real_url import (
@@ -106,7 +106,7 @@ The URL is a positional argument. A missing scheme is tried as
 `https://` first, then `http://` if HTTPS cannot be fetched or returns
 404. An explicit `http://` or `https://` is used as given.
 
-### Output and exit codes
+### Output and Exit Codes
 
 | Result                    | Stdout                         | Exit |
 | ------------------------- | ------------------------------ | ---- |
