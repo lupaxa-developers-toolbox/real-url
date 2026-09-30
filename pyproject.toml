@@ -38,8 +38,8 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://real-url.thelupaxaproject.org/"
-Documentation = "https://real-url.thelupaxaproject.org/"
+Homepage = "https://github.com/lupaxa-developers-toolbox/real-url"
+Documentation = "https://github.com/lupaxa-developers-toolbox/real-url"
 Repository = "https://github.com/lupaxa-developers-toolbox/real-url"
 Issues = "https://github.com/lupaxa-developers-toolbox/real-url/issues"
 
@@ -54,8 +54,6 @@ dev = [
   "mypy>=1.12.0",
   "hatch>=1.12.0",
   "bump-my-version>=1.2.0",
-  "mkdocs==1.6.1",
-  "mkdocs-material==9.7.7",
 ]
 test = [
   "pytest>=8.0",
